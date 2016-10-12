@@ -1,6 +1,6 @@
 ﻿namespace FormForum
 {
-    partial class Form2
+    partial class Categorie
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form2
+            // Categorie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 348);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(624, 354);
+            this.Name = "Categorie";
+            this.Text = "Categorie";
             this.ResumeLayout(false);
 
         }

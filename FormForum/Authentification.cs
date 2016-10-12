@@ -10,21 +10,25 @@ using System.Windows.Forms;
 
 namespace FormForum
 {
-    public partial class Form1 : Form
+    public partial class Authentification : Form
     {
-        public Form1()
+        public Authentification()
         {
             InitializeComponent();
         }
 
         private void btConnexion_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Categorie cat = new Categorie();
+            cat.Show();
         }
 
-        private void btQuitter_Click(object sender, EventArgs e)
+        private void btCancel_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Accueil ac = new Accueil();
+            ac.Show();
         }
     }
 }

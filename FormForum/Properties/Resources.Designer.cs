@@ -63,6 +63,16 @@ namespace FormForum.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap annuler_icone_8717_32 {
+            get {
+                object obj = ResourceManager.GetObject("annuler_icone_8717_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ConnexionForm {
             get {
                 object obj = ResourceManager.GetObject("ConnexionForm", resourceCulture);
@@ -86,6 +96,16 @@ namespace FormForum.Properties {
         internal static System.Drawing.Bitmap quitte {
             get {
                 object obj = ResourceManager.GetObject("quitte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reseau_recevoir_transmettre_icone_8164_32 {
+            get {
+                object obj = ResourceManager.GetObject("reseau_recevoir_transmettre_icone_8164_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
