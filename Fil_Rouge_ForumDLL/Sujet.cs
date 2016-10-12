@@ -8,8 +8,17 @@ namespace Fil_Rouge_Forum
 {
     class Sujet
     {
-        
+
         #region "Property et attributs"
+
+        private int _idSujet;
+
+        public int IdSujet
+        {
+            get { return _idSujet; }
+            set { _idSujet = value; }
+        }
+
         #endregion
         #region "Constructeurs"
         #endregion
