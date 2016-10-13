@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FormForum
 {
-    public partial class Categorie : Form
+    public partial class Main : Form
     {
-        public Categorie()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void btAnnuler_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

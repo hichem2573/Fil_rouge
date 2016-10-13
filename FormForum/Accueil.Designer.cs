@@ -69,11 +69,11 @@
             this.btConnexion.Name = "btConnexion";
             this.btConnexion.Size = new System.Drawing.Size(175, 38);
             this.btConnexion.TabIndex = 2;
-            this.btConnexion.Text = "Connexion au forum";
+            this.btConnexion.Text = "Accès au forum";
             this.btConnexion.UseVisualStyleBackColor = true;
             this.btConnexion.Click += new System.EventHandler(this.btConnexion_Click);
             // 
-            // Form1
+            // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,7 +85,7 @@
             this.Controls.Add(this.btQuitter);
             this.MaximumSize = new System.Drawing.Size(950, 550);
             this.MinimumSize = new System.Drawing.Size(780, 550);
-            this.Name = "Form1";
+            this.Name = "Accueil";
             this.Text = "Communauté des développeurs de 2ISA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

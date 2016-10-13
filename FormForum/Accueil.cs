@@ -20,8 +20,8 @@ namespace FormForum
         private void btConnexion_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Authentification aut = new Authentification();
-            aut.Show();
+            Main man = new Main();
+            man.Show();
         }
 
         private void btQuitter_Click(object sender, EventArgs e)

@@ -133,4 +133,7 @@
   <data name="reseau_recevoir_transmettre_icone_8164_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reseau-recevoir-transmettre-icone-8164-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Continuity_Discussion_forum_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Continuity_Discussion forum_logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

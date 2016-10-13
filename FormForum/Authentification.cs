@@ -20,14 +20,14 @@ namespace FormForum
         private void btConnexion_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Categorie cat = new Categorie();
-            cat.Show();
+            Main main = new Main();
+            main.Show();
         }
 
         private void btCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Accueil ac = new Accueil();
+            Main ac = new Main();
             ac.Show();
         }
     }

@@ -83,6 +83,16 @@ namespace FormForum.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Continuity_Discussion_forum_logo {
+            get {
+                object obj = ResourceManager.GetObject("Continuity_Discussion_forum_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forum_discussion {
             get {
                 object obj = ResourceManager.GetObject("forum_discussion", resourceCulture);
