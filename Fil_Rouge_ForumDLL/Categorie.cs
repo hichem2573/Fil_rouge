@@ -19,7 +19,24 @@ namespace Fil_Rouge_Forum
             set { _Titre = value; }
         }
 
+        private string _Nom;
+
+        public string Nom
+        {
+            get { return _Nom; }
+            set { _Nom = value; }
+        }
+
+        private string _Description;
+
+        public string Description
+        {
+            get { return _Description; }
+            set { _Description = value; }
+        }
+
         #endregion
+
         #region "Constructeurs"
         #endregion
         #region "Methodes"
