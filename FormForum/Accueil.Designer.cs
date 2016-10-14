@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btQuitter = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btConnexion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +43,24 @@
             this.btQuitter.Location = new System.Drawing.Point(712, 425);
             this.btQuitter.Name = "btQuitter";
             this.btQuitter.Size = new System.Drawing.Size(122, 41);
-            this.btQuitter.TabIndex = 0;
+            this.btQuitter.TabIndex = 1;
             this.btQuitter.Text = "Quitter";
             this.btQuitter.UseVisualStyleBackColor = true;
             this.btQuitter.Click += new System.EventHandler(this.btQuitter_Click);
+            // 
+            // btConnexion
+            // 
+            this.btConnexion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btConnexion.AutoSize = true;
+            this.btConnexion.Image = global::FormForum.Properties.Resources.ConnexionForm;
+            this.btConnexion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btConnexion.Location = new System.Drawing.Point(99, 428);
+            this.btConnexion.Name = "btConnexion";
+            this.btConnexion.Size = new System.Drawing.Size(175, 38);
+            this.btConnexion.TabIndex = 0;
+            this.btConnexion.Text = "Accès au forum";
+            this.btConnexion.UseVisualStyleBackColor = true;
+            this.btConnexion.Click += new System.EventHandler(this.btConnexion_Click);
             // 
             // pictureBox1
             // 
@@ -58,20 +72,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // btConnexion
-            // 
-            this.btConnexion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btConnexion.AutoSize = true;
-            this.btConnexion.Image = global::FormForum.Properties.Resources.ConnexionForm;
-            this.btConnexion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btConnexion.Location = new System.Drawing.Point(99, 428);
-            this.btConnexion.Name = "btConnexion";
-            this.btConnexion.Size = new System.Drawing.Size(175, 38);
-            this.btConnexion.TabIndex = 2;
-            this.btConnexion.Text = "Accès au forum";
-            this.btConnexion.UseVisualStyleBackColor = true;
-            this.btConnexion.Click += new System.EventHandler(this.btConnexion_Click);
             // 
             // Accueil
             // 

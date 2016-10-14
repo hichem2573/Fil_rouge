@@ -21,5 +21,25 @@ namespace FormForum
         {
 
         }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btEditPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbBoxCategorie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbBoxSujet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
