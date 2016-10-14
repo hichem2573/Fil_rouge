@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fil_Rouge_ForumDLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,12 +19,12 @@ namespace Fil_Rouge_Forum
         //    get { return _Sujets; }
         //}
 
-        private int _idSujet;
+        private int _IdSujet;
 
         public int IdSujet
         {
-            get { return _idSujet; }
-            set { _idSujet = value; }
+            get { return _IdSujet; }
+            set { _IdSujet = value; }
         }
 
         private string _Desc;
@@ -33,6 +34,41 @@ namespace Fil_Rouge_Forum
             get { return _Desc; }
             set { _Desc = value; }
         }
+
+        private DateTime  _Datecreation;
+
+        public DateTime  Datecreation
+        {
+            get { return _Datecreation; }
+            set { _Datecreation = value; }
+        }
+
+        private Categorie _Cat;
+
+        public Categorie Cat
+        {
+            get { return _Cat; }
+            set { _Cat = value; }
+        }
+
+        private string _Titre;
+
+        public string Titre
+        {
+            get { return _Titre; }
+            set { _Titre = value; }
+        }
+
+        //private Utilisateur _Auteur;
+
+        //public Utilisateur Auteur
+        //{
+        //    get { return _Auteur; }
+        //    set { _Auteur = value; }
+        //}
+
+
+
 
 
         #endregion
@@ -44,12 +80,14 @@ namespace Fil_Rouge_Forum
         /// <param name="idsujet"></param>
         /// <param name="desc"></param>
         /// <param name="categorie"></param>
-        public Sujet(int idsujet, string desc, Categorie categorie)
+        public Sujet(int Idsujet, string Desc, Categorie Cat)
         {
-            _idSujet = idsujet;
-            _Desc = desc;
-
-
+            this._IdSujet = IdSujet;
+            this._Cat = Cat;
+            this._Desc = Desc;
+            this._Datecreation = Datecreation;
+            this._Titre = Titre;
+            //_Auteur = Auteur.Login;
         }
         #endregion
         #region "Methodes"
