@@ -59,13 +59,13 @@ namespace Fil_Rouge_Forum
             set { _Titre = value; }
         }
 
-        //private Utilisateur _Auteur;
+        private Utilisateur _Auteur;
 
-        //public Utilisateur Auteur
-        //{
-        //    get { return _Auteur; }
-        //    set { _Auteur = value; }
-        //}
+        public Utilisateur Auteur
+        {
+            get { return _Auteur; }
+            set { _Auteur = value; }
+        }
 
 
 
@@ -80,14 +80,14 @@ namespace Fil_Rouge_Forum
         /// <param name="idsujet"></param>
         /// <param name="desc"></param>
         /// <param name="categorie"></param>
-        public Sujet(int Idsujet, string Desc, Categorie Cat)
+        public Sujet(int Idsujet, string Desc, Categorie Cat, Utilisateur Auteur)
         {
             this._IdSujet = IdSujet;
             this._Cat = Cat;
             this._Desc = Desc;
             this._Datecreation = Datecreation;
             this._Titre = Titre;
-            //_Auteur = Auteur.Login;
+            this._Auteur = Auteur;
         }
         #endregion
         #region "Methodes"
