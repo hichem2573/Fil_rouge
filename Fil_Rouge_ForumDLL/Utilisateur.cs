@@ -8,7 +8,7 @@ namespace Fil_Rouge_ForumDLL
 {
     /// <summary>
     /// Un utilisateur est identifier par son Login et son mot de passe 
-    /// </summary>
+    /// </summary>Utilisateur
     public class Utilisateur
     {
 
