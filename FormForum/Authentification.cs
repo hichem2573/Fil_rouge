@@ -30,5 +30,27 @@ namespace FormForum
             Main ac = new Main();
             ac.Show();
         }
+
+        private void txtBoxLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxNewPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxConfirmNewPwd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

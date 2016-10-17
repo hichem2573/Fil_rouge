@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CréationReponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CréationReponse.Designer.cs">
+      <DependentUpon>CréationReponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CréationSujet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CréationSujet.Designer.cs">
+      <DependentUpon>CréationSujet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authentification.resx">
       <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CréationReponse.resx">
+      <DependentUpon>CréationReponse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CréationSujet.resx">
+      <DependentUpon>CréationSujet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

@@ -31,15 +31,15 @@
             this.btConnexion = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblLogin = new System.Windows.Forms.Label();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
+            this.txtBoxLogin = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblNewPassword = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtBoxConfirmNewPwd = new System.Windows.Forms.TextBox();
+            this.txtBoxNewPassword = new System.Windows.Forms.TextBox();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblNewPassword = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -72,8 +72,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.txtBoxPassword);
+            this.panel1.Controls.Add(this.txtBoxLogin);
             this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.lblLogin);
             this.panel1.Location = new System.Drawing.Point(12, 21);
@@ -81,25 +82,25 @@
             this.panel1.Size = new System.Drawing.Size(597, 125);
             this.panel1.TabIndex = 6;
             // 
-            // panel2
+            // txtBoxPassword
             // 
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.lblConfirmPassword);
-            this.panel2.Controls.Add(this.lblNewPassword);
-            this.panel2.Location = new System.Drawing.Point(12, 152);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(597, 132);
-            this.panel2.TabIndex = 7;
+            this.txtBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxPassword.Location = new System.Drawing.Point(177, 73);
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.Size = new System.Drawing.Size(150, 20);
+            this.txtBoxPassword.TabIndex = 1;
+            this.txtBoxPassword.Text = "Mot de passe";
+            this.txtBoxPassword.TextChanged += new System.EventHandler(this.txtBoxPassword_TextChanged);
             // 
-            // lblLogin
+            // txtBoxLogin
             // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(27, 22);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(69, 13);
-            this.lblLogin.TabIndex = 0;
-            this.lblLogin.Text = "User Name : ";
+            this.txtBoxLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxLogin.Location = new System.Drawing.Point(177, 19);
+            this.txtBoxLogin.Name = "txtBoxLogin";
+            this.txtBoxLogin.Size = new System.Drawing.Size(150, 20);
+            this.txtBoxLogin.TabIndex = 0;
+            this.txtBoxLogin.Text = "Login";
+            this.txtBoxLogin.TextChanged += new System.EventHandler(this.txtBoxLogin_TextChanged);
             // 
             // lblPassword
             // 
@@ -110,14 +111,47 @@
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password : ";
             // 
-            // lblNewPassword
+            // lblLogin
             // 
-            this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Location = new System.Drawing.Point(27, 25);
-            this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(78, 13);
-            this.lblNewPassword.TabIndex = 1;
-            this.lblNewPassword.Text = "New Password";
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Location = new System.Drawing.Point(27, 22);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(69, 13);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "User Name : ";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.txtBoxConfirmNewPwd);
+            this.panel2.Controls.Add(this.txtBoxNewPassword);
+            this.panel2.Controls.Add(this.lblConfirmPassword);
+            this.panel2.Controls.Add(this.lblNewPassword);
+            this.panel2.Location = new System.Drawing.Point(12, 152);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(597, 132);
+            this.panel2.TabIndex = 7;
+           
+            // 
+            // txtBoxConfirmNewPwd
+            // 
+            this.txtBoxConfirmNewPwd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxConfirmNewPwd.Location = new System.Drawing.Point(177, 88);
+            this.txtBoxConfirmNewPwd.Name = "txtBoxConfirmNewPwd";
+            this.txtBoxConfirmNewPwd.Size = new System.Drawing.Size(150, 20);
+            this.txtBoxConfirmNewPwd.TabIndex = 3;
+            this.txtBoxConfirmNewPwd.Text = "***********";
+            this.txtBoxConfirmNewPwd.TextChanged += new System.EventHandler(this.txtBoxConfirmNewPwd_TextChanged);
+            // 
+            // txtBoxNewPassword
+            // 
+            this.txtBoxNewPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxNewPassword.Location = new System.Drawing.Point(177, 25);
+            this.txtBoxNewPassword.Name = "txtBoxNewPassword";
+            this.txtBoxNewPassword.Size = new System.Drawing.Size(150, 20);
+            this.txtBoxNewPassword.TabIndex = 2;
+            this.txtBoxNewPassword.Text = "***********";
+            this.txtBoxNewPassword.TextChanged += new System.EventHandler(this.txtBoxNewPassword_TextChanged);
             // 
             // lblConfirmPassword
             // 
@@ -128,33 +162,14 @@
             this.lblConfirmPassword.TabIndex = 2;
             this.lblConfirmPassword.Text = "Confirm Password : ";
             // 
-            // textBox1
+            // lblNewPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(177, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(177, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(177, 25);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 20);
-            this.textBox3.TabIndex = 3;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(177, 88);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 20);
-            this.textBox4.TabIndex = 4;
+            this.lblNewPassword.AutoSize = true;
+            this.lblNewPassword.Location = new System.Drawing.Point(27, 25);
+            this.lblNewPassword.Name = "lblNewPassword";
+            this.lblNewPassword.Size = new System.Drawing.Size(78, 13);
+            this.lblNewPassword.TabIndex = 1;
+            this.lblNewPassword.Text = "New Password";
             // 
             // Authentification
             // 
@@ -187,9 +202,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblConfirmPassword;
         private System.Windows.Forms.Label lblNewPassword;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBoxPassword;
+        private System.Windows.Forms.TextBox txtBoxLogin;
+        private System.Windows.Forms.TextBox txtBoxConfirmNewPwd;
+        private System.Windows.Forms.TextBox txtBoxNewPassword;
     }
 }

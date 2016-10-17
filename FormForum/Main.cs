@@ -41,5 +41,30 @@ namespace FormForum
         {
 
         }
+
+        private void btNouveauSujet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btNouvelleReponse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btDeleteSujet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btDeleteReponse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
