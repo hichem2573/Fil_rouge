@@ -62,6 +62,12 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fil_Rouge_ForumDLL\Fil_Rouge_ForumDLL.csproj">
+      <Project>{62836890-4C97-485D-AD3B-CDEDAF5923BD}</Project>
+      <Name>Fil_Rouge_ForumDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

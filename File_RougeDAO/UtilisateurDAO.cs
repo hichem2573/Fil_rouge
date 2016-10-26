@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fil_RougeDAO
 {
-    class UtilisateurDAO
+    public class UtilisateurDAO
     {
     }
 }
