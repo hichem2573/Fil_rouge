@@ -85,7 +85,7 @@ namespace Fil_RougeDAO
                 // parcours des toutes lignes de notre table 
                 foreach(DataRow row in dt.Rows)
                 {
-                    _Sujets.Add(new Sujet(int.Parse(row["ID_SUJET"].ToString()), row["TITRE"].ToString, row["DESCRIPTION"].ToString, CategorieDAO.GetCategorieByID(idcategorie)));
+                    _Sujets.Add(new Sujet(int.Parse(row["ID_SUJET"].ToString()), row["TITRE"].ToString(), row["DESCRIPTION"].ToString(), CategorieDAO.GetCategorieByID(idcategorie)));
 
                 }
                 return _Sujets;
