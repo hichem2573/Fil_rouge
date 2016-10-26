@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace File_RougeDAO
+namespace Fil_RougeDAO
 {
-    public class Class1
+    public class CategorieDAO
     {
     }
 }
