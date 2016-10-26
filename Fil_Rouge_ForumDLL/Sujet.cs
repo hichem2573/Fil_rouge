@@ -1,4 +1,4 @@
-﻿using Fil_Rouge_ForumDLL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Fil_Rouge_Forum
     /// Pemet de voir les reponses, concernant un sujet
     /// Elle comporte un identifiant, titre du sujet, la description, la rubrique et les reponses
     /// </summary>
-    class Sujet
+    public class Sujet
     {
 
         #region "Property et attributs"

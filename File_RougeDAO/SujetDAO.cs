@@ -43,6 +43,14 @@ namespace Fil_RougeDAO
 
                 return _Sujets;
             }
+
+            return null;
+        }
+
+
+        public static Sujet GetSujetByID( int idsujet)
+        {
+
         }
         #endregion
 

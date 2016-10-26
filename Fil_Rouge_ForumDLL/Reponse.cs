@@ -1,4 +1,5 @@
-﻿using Fil_Rouge_ForumDLL;
+﻿
+using Fil_Rouge_ForumDLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Fil_Rouge_Forum
     /// La classe reponse permet de voir toutes les reponse, concernant un sujet donnée 
     /// d'une rubrique donnée
     /// </summary>
-    class Reponse
+    public class Reponse
     {
 
         #region "Property et attributs"

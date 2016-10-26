@@ -10,7 +10,7 @@ namespace Fil_Rouge_Forum
     /// La classe catégorie, se compose d'un identifiant unique pour chaque rubrique
     /// Le nom de celle-ci (libelle) et une description pour chaque catégorie
     /// </summary>
-    class Categorie
+    public class Categorie
     {
 
         #region "Property et attributs"
