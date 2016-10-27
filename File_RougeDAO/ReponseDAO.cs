@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace Fil_RougeDAO
 {
     /// <summary>
-    /// 
+    /// La classe ReponseDAO, permet la recupération des toutes les reponses, l'ajout d'une reponse à un sujet etc...
+    /// dans la table reponse de notre base de données
     /// </summary>
     public static class ReponseDAO
     {
@@ -26,10 +27,11 @@ namespace Fil_RougeDAO
         #region "Methodes"
 
         /// <summary>
-        /// 
+        /// La méthodes GetAllReponseBySujet, permet de recupérer toutes les reponses
+        /// d'un sujet. dont l'identifiant est passé en parametre
         /// </summary>
-        /// <param name="idsujet"></param>
-        /// <returns></returns>
+        /// <param name="idsujet">L'identifiant du sujet</param>
+        /// <returns>Les reponses, concernant un sujet. Dont l'identifiant est passé en parametre</returns>
         /// 
         public static List<Reponse> GetAllReponseBySujet( int idSujet)
         {

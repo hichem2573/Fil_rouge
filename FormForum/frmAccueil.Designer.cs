@@ -1,6 +1,6 @@
 ﻿namespace FormForum
 {
-    partial class Accueil
+    partial class FrmAccueil
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

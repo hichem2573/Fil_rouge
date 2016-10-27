@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Fil_RougeDAO
 {
     /// <summary>
-    /// 
+    /// La classe UtilisateurDAO, permet d'accèdé aux données, et interagir avec la base de données.
     /// </summary>
     public static class UtilisateurDAO
     {

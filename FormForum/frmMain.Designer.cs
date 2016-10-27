@@ -1,6 +1,6 @@
 ﻿namespace FormForum
 {
-    partial class Main
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             this.cbBoxSujet = new System.Windows.Forms.ComboBox();
             this.cbBoxCategorie = new System.Windows.Forms.ComboBox();
             this.pnlAnnulation = new System.Windows.Forms.Panel();
+            this.btAnnuler = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.plConnexion = new System.Windows.Forms.Panel();
             this.btEditPassword = new System.Windows.Forms.Button();
-            this.btAnnuler = new System.Windows.Forms.Button();
             this.btLogin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.plCombo.SuspendLayout();
@@ -101,6 +101,18 @@
             this.pnlAnnulation.Size = new System.Drawing.Size(215, 95);
             this.pnlAnnulation.TabIndex = 1;
             // 
+            // btAnnuler
+            // 
+            this.btAnnuler.Image = global::FormForum.Properties.Resources.annuler_icone_8717_32;
+            this.btAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btAnnuler.Location = new System.Drawing.Point(43, 32);
+            this.btAnnuler.Name = "btAnnuler";
+            this.btAnnuler.Size = new System.Drawing.Size(125, 37);
+            this.btAnnuler.TabIndex = 0;
+            this.btAnnuler.Text = "&Annuler";
+            this.btAnnuler.UseVisualStyleBackColor = true;
+            this.btAnnuler.Click += new System.EventHandler(this.btAnnuler_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -130,18 +142,6 @@
             this.btEditPassword.UseVisualStyleBackColor = true;
             this.btEditPassword.Click += new System.EventHandler(this.btEditPassword_Click);
             // 
-            // btAnnuler
-            // 
-            this.btAnnuler.Image = global::FormForum.Properties.Resources.annuler_icone_8717_32;
-            this.btAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btAnnuler.Location = new System.Drawing.Point(43, 32);
-            this.btAnnuler.Name = "btAnnuler";
-            this.btAnnuler.Size = new System.Drawing.Size(125, 37);
-            this.btAnnuler.TabIndex = 0;
-            this.btAnnuler.Text = "&Annuler";
-            this.btAnnuler.UseVisualStyleBackColor = true;
-            this.btAnnuler.Click += new System.EventHandler(this.btAnnuler_Click);
-            // 
             // btLogin
             // 
             this.btLogin.Image = global::FormForum.Properties.Resources.login;
@@ -154,14 +154,14 @@
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
-            // Main
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1266, 632);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Main";
+            this.Name = "frmMain";
             this.Text = "frmMain";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.plCombo.ResumeLayout(false);

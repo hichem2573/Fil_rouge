@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace FormForum
 {
-    public partial class Accueil : Form
+    public partial class FrmAuthentification : Form
     {
-        public Accueil()
+        public FrmAuthentification()
         {
             InitializeComponent();
         }
 
         private void btConnexion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Main man = new Main();
-            man.Show();
-        }
 
-        private void btQuitter_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
