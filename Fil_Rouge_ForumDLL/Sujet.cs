@@ -116,6 +116,12 @@ namespace Fil_Rouge_Forum
             _Reponses = Reponses;
         }
 
+        public Sujet(int id, string titre)
+        {
+            this.IdSujet = id;
+            this.Titre = titre;
+        }
+
 
         #endregion
         #region "Methodes"

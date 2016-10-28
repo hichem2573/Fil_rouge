@@ -28,25 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btQuitter = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAccueil));
             this.btConnexion = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btQuitter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btQuitter
-            // 
-            this.btQuitter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btQuitter.AutoSize = true;
-            this.btQuitter.Image = global::FormForum.Properties.Resources.quitte;
-            this.btQuitter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btQuitter.Location = new System.Drawing.Point(712, 425);
-            this.btQuitter.Name = "btQuitter";
-            this.btQuitter.Size = new System.Drawing.Size(122, 41);
-            this.btQuitter.TabIndex = 1;
-            this.btQuitter.Text = "Quitter";
-            this.btQuitter.UseVisualStyleBackColor = true;
-            this.btQuitter.Click += new System.EventHandler(this.btQuitter_Click);
             // 
             // btConnexion
             // 
@@ -73,6 +60,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btQuitter
+            // 
+            this.btQuitter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btQuitter.AutoSize = true;
+            this.btQuitter.Image = global::FormForum.Properties.Resources.quitte;
+            this.btQuitter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btQuitter.Location = new System.Drawing.Point(712, 425);
+            this.btQuitter.Name = "btQuitter";
+            this.btQuitter.Size = new System.Drawing.Size(122, 41);
+            this.btQuitter.TabIndex = 1;
+            this.btQuitter.Text = "Quitter";
+            this.btQuitter.UseVisualStyleBackColor = true;
+            this.btQuitter.Click += new System.EventHandler(this.btQuitter_Click);
+            // 
             // FrmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,6 +84,7 @@
             this.Controls.Add(this.btConnexion);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btQuitter);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(950, 550);
             this.MinimumSize = new System.Drawing.Size(780, 550);
             this.Name = "FrmAccueil";

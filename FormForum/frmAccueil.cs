@@ -13,8 +13,9 @@ namespace FormForum
 {
     public partial class FrmAccueil : Form
     {
-        //static internal bool IsConnected;
-        //static internal Utilisateur CurrentUtilisateur;
+        static internal bool IsRoleModera;
+        static internal Utilisateur CurrentUtilisateur;
+        static internal bool Isconnected;
 
         public FrmAccueil()
         {
