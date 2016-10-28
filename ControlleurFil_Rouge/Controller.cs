@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace ControlleurFil_Rouge
 {
     /// <summary>
-    /// 
+    /// La classe controller, permet de faire le lien entre la base de données
+    /// Et le DAO 
     /// </summary>
     public static class Controller
     {

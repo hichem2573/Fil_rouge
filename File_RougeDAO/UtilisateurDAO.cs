@@ -79,7 +79,7 @@ namespace Fil_RougeDAO
             if(dt.Rows.Count == 1)
             {
                 DataRow row = dt.Rows[0];
-                Utilisateur user = new Utilisateur(int.Parse(row["ID_UTILISATEUR"].ToString()), row["LOGIN"].ToString(), row["PASSWORD"].ToString(), (bool)row["ROLE"]);
+                Utilisateur user = new Utilisateur(int.Parse(row["ID_UTILISATEUR"].ToString()), row["LOGIN"].ToString(), row["PASSWORD"].ToString(), (bool)row["ROLEMODERA"]);
                 return user;
             }
             return null;
@@ -100,7 +100,7 @@ namespace Fil_RougeDAO
                 List<Utilisateur> _Utilisateurs = new List<Utilisateur>();
                 foreach(DataRow row in dt.Rows)
                 {
-                    Utilisateur user = new Utilisateur(int.Parse(row["ID_UTILISATEUR"].ToString()), row["LOGIN"].ToString(), row["PASSWORD"].ToString(), (bool)row["Role"]);
+                    Utilisateur user = new Utilisateur(int.Parse(row["ID_UTILISATEUR"].ToString()), row["LOGIN"].ToString(), row["PASSWORD"].ToString(), (bool)row["ROLEMODERA"]);
                     _Utilisateurs.Add(user);
                 }
                 return _Utilisateurs;

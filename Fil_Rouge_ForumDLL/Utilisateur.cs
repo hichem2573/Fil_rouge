@@ -50,12 +50,12 @@ namespace Fil_Rouge_ForumDLL
         /// <summary>
         /// Le role de l'utilisateur, soit il est modérateur ou un utilisateur logged
         /// </summary>
-        private bool _Role;
+        private bool _IsRoleModera;
 
-        public bool Role
+        public bool IsRoleModera
         {
-            get { return _Role; }
-            set { _Role = value; }
+            get { return _IsRoleModera; }
+            set { _IsRoleModera = value; }
         }
 
         #endregion
@@ -69,12 +69,12 @@ namespace Fil_Rouge_ForumDLL
         /// <param name="login">Le login de l'utilisateur</param>
         /// <param name="password">Le mot de passe de l'utilisateur</param>
         /// <param name="role">Le role attribut à un utilisateur</param>
-        public Utilisateur(int iduser, string login, string password, bool role)
+        public Utilisateur(int iduser, string login, string password, bool isRoleModera)
         {
             this._IdUser = iduser;
             this.Login = login;
             this.Password = password;
-            this.Role = role;
+            this.IsRoleModera = isRoleModera;
         }
         #endregion
         #region "Methodes"
