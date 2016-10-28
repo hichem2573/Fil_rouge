@@ -30,8 +30,6 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.plCombo = new System.Windows.Forms.Panel();
-            this.cbBoxSujet = new System.Windows.Forms.ComboBox();
-            this.cbBoxCategorie = new System.Windows.Forms.ComboBox();
             this.pnlAnnulation = new System.Windows.Forms.Panel();
             this.btAnnuler = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -39,7 +37,6 @@
             this.btEditPassword = new System.Windows.Forms.Button();
             this.btLogin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            this.plCombo.SuspendLayout();
             this.pnlAnnulation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.plConnexion.SuspendLayout();
@@ -66,32 +63,11 @@
             // 
             // plCombo
             // 
-            this.plCombo.Controls.Add(this.cbBoxSujet);
-            this.plCombo.Controls.Add(this.cbBoxCategorie);
+            this.plCombo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plCombo.Location = new System.Drawing.Point(1024, 94);
             this.plCombo.Name = "plCombo";
             this.plCombo.Size = new System.Drawing.Size(215, 410);
             this.plCombo.TabIndex = 0;
-            // 
-            // cbBoxSujet
-            // 
-            this.cbBoxSujet.FormattingEnabled = true;
-            this.cbBoxSujet.Location = new System.Drawing.Point(15, 164);
-            this.cbBoxSujet.Name = "cbBoxSujet";
-            this.cbBoxSujet.Size = new System.Drawing.Size(166, 21);
-            this.cbBoxSujet.TabIndex = 1;
-            this.cbBoxSujet.Text = "Selectionner un Sujet";
-            this.cbBoxSujet.SelectedIndexChanged += new System.EventHandler(this.cbBoxSujet_SelectedIndexChanged);
-            // 
-            // cbBoxCategorie
-            // 
-            this.cbBoxCategorie.FormattingEnabled = true;
-            this.cbBoxCategorie.Location = new System.Drawing.Point(15, 29);
-            this.cbBoxCategorie.Name = "cbBoxCategorie";
-            this.cbBoxCategorie.Size = new System.Drawing.Size(166, 21);
-            this.cbBoxCategorie.TabIndex = 0;
-            this.cbBoxCategorie.Text = "Selectionner une catégorie";
-            this.cbBoxCategorie.SelectedIndexChanged += new System.EventHandler(this.cbBoxCategorie_SelectedIndexChanged);
             // 
             // pnlAnnulation
             // 
@@ -116,6 +92,8 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(190, 94);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(828, 410);
@@ -132,11 +110,12 @@
             // 
             // btEditPassword
             // 
+            this.btEditPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEditPassword.Image = global::FormForum.Properties.Resources.edit;
             this.btEditPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEditPassword.Location = new System.Drawing.Point(632, 32);
+            this.btEditPassword.Location = new System.Drawing.Point(0, 0);
             this.btEditPassword.Name = "btEditPassword";
-            this.btEditPassword.Size = new System.Drawing.Size(137, 37);
+            this.btEditPassword.Size = new System.Drawing.Size(828, 95);
             this.btEditPassword.TabIndex = 1;
             this.btEditPassword.Text = "&Edit Password";
             this.btEditPassword.UseVisualStyleBackColor = true;
@@ -154,17 +133,16 @@
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
-            // frmMain
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1266, 632);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.Text = "frmMain";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.plCombo.ResumeLayout(false);
             this.pnlAnnulation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.plConnexion.ResumeLayout(false);
@@ -176,8 +154,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel plCombo;
-        private System.Windows.Forms.ComboBox cbBoxSujet;
-        private System.Windows.Forms.ComboBox cbBoxCategorie;
         private System.Windows.Forms.Panel pnlAnnulation;
         private System.Windows.Forms.Button btAnnuler;
         private System.Windows.Forms.DataGridView dataGridView1;

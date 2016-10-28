@@ -66,14 +66,14 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::FormForum.Properties.Resources.forum_discussion;
-            this.pictureBox1.Location = new System.Drawing.Point(333, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(331, 129);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 191);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Accueil
+            // FrmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,7 +85,7 @@
             this.Controls.Add(this.btQuitter);
             this.MaximumSize = new System.Drawing.Size(950, 550);
             this.MinimumSize = new System.Drawing.Size(780, 550);
-            this.Name = "Accueil";
+            this.Name = "FrmAccueil";
             this.Text = "Communauté des développeurs de 2ISA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
